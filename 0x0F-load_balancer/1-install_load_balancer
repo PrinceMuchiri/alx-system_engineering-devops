@@ -14,7 +14,7 @@ frontend http_front
         bind *:80
         mode http
         default_backend http_back
-backend yonas-backend
+backend http_back
         balance roundrobin
         server 115853-web-01 35.153.255.181:80 check
         server 115853-web-02 34.207.155.20:80 check
